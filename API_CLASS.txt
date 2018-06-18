@@ -1,0 +1,56 @@
+API --> something that other people and tools wrote and we can use 
+<input id="q" aria-hidden="true" autocomplete="off" name="q" tabindex="-1" type="url" jsaction="mousedown:ntp.fkbxclk" style="opacity: 0;">
+	input --> tag
+	id , aria-hidden , autocomplete. name --->attributes
+	q,true,off . q ---> vaules
+locators --> means , ways ysed by selenium to find elements 
+	By --> class that provides . findElement() method takes a by object 
+	
+	There are 8 locators :
+	1.	id ----> By.id("dfsdsf") . always unique (almost), find by the id of the elements 
+	2.	name ----> By.name("sdfas"), can be repeated ,find by the name of the elements 
+	3.	tagName ----> By.tagName("dfa").finds by the tag of elements 
+	4.	class ---> find by the class attribute , By.class ("asdfa"), we can ony use the class attribute  if the attribute does not have space in it 
+	(made of multiple classes )
+	
+	5.	 linkTest ----> find elements by the full text of a link By.linkText("Gmail"), case sensitive, full match
+	6. 	partialLinkText  ----> find elements by the partial text  of a link By.linkText("Gmail"), case sensitive, full match
+	
+----------------
+element.isSelected() ---->returns true or false based on whether is selected works for checkedboxex and radiobutton
+	
+----------------
+<input type ="checkbox" checked>
+	tag ---->input
+	attr ----> type , checked 
+	value of type =checkbox 
+	value of checked =""
+	
+	parent tag ---> form
+	
+	sibling tag -----> input
+	
+	description 1 : it is an input tag. it has attr type whose value is "checkbox"
+	//E[@A='t']
+	E ---->tag
+	A----->attr
+	t------->value
+			// input[@type='checkbox']	
+			//. ----> it means the xpath is relative xpath. selenium will start searching for elements anywhere in the htnk document.
+	start with two slashes//
+		/html/body/div/div/div/div/form/input. -----> ABSOLUTE xpath
+	
+	/ ----> starts with 1 slash / always start with the parent element of document , it depends on the HTML structure of the page. xpath may break if the html three	of the page changes
+
+-------------
+	select -----> tag that indicates dropdown lists select tag con
+
+
+
+
+
+
+
+	
+	
+	
